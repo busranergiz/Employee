@@ -1,4 +1,5 @@
 # Employee
+
 public class Employee {
 	private String name;
 	double salary;
@@ -55,4 +56,18 @@ public class Employee {
 	
 }	
 	
+	
+# EmpDriver
+
+public class EmpDriver {
+	
+	public static void main(String [] args) {
+		Employee emp1 = new Employee (1985,45,2000,"Büşra Nergiz");
+		emp1.toString(emp1);
+	}
+	
+
+}
+
+
 	
