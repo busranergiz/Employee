@@ -1,15 +1,16 @@
 # Employee
 
+
 public class Employee {
 	private String name;
 	double salary;
 	private int workHours, hireYear;
 	
-	Employee(int hireYear, int workHours, double salary, String name) {
+	Employee(String name, double salary, int workHours, int hireYear) {
 		this.name = name;
 		this.salary = salary;
 		this.workHours = workHours;
-		this.salary = salary;
+		this.hireYear = hireYear;
 	
 		
 	}
@@ -54,7 +55,7 @@ public class Employee {
 	
 	}
 	
-}	
+}		
 	
 	
 # EmpDriver
@@ -62,11 +63,10 @@ public class Employee {
 public class EmpDriver {
 	
 	public static void main(String [] args) {
-		Employee emp1 = new Employee (1985,45,2000,"Büşra Nergiz");
+		Employee emp1 = new Employee ("Büşra Nergiz",2000,45,1985);
 		emp1.toString(emp1);
 	}
 	
-
 }
 
 
