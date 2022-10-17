@@ -49,8 +49,8 @@ public class Employee {
 		System.out.println("Tax :" + emp.tax());
 		System.out.println("Bonus :" + emp.bonus());
 		System.out.println("Increase Salary :" + emp.increase());
-		double totalSalary = emp.salary + emp.bonus();
-		System.out.println("Total salary with bonus:" + totalSalary);
+		double totalSalary = emp.salary - emp.tax()+ emp.bonus();
+		System.out.println("Total salary with tax and bonus:" + totalSalary);
 		System.out.println("Total salary with the raise of salary:" + (emp.salary + emp.increase()));
 	
 	}
